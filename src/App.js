@@ -4,6 +4,13 @@ import logo from './logo.svg';
 import './App.css';
 import { servers } from "./components/data";
 import ServerList from './components/server-list';
+import Countries from './components/countries';
+
+
+import { Switch, Route } from 'react-router-dom'
+import Drugs from './components/forms/Drugs';
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -42,11 +49,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.lists.map((listItem, index) => {
-          return <ServerList handleServer={this.handleServer} key={index} header={listItem} serversList={this.state.servers.filter((currentServer) => {
-            return currentServer.status == listItem
-          })} />
-        })}
+        <Drugs/>
       </div>
     );
   }

@@ -13,11 +13,11 @@ export default class ServerList extends Component {
     render() {
         return (
             <div>
-                <h2> serverList: {this.props.header}</h2>
+                <h2>  {this.props.header}</h2>
                 <div>
-                    {this.props.serversList.map((server, index) => {
+                    {/* {this.props.serversList.map((server, index) => {
                         return <Machine handleServer={this.props.handleServer} key={index} ip={server.ip} type={server.type} status={server.status} />
-                    })}
+                    })} */}
                 </div>
             </div>
         )
