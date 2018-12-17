@@ -75,6 +75,7 @@ export default class Drugs extends Component {
 
     handleInputChange(e) {
 
+
         this.setState({
             [e.target.name]: e.target.value,
             errormsg: ""
